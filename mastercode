@@ -1,0 +1,33 @@
+
+    
+def makeGameArray(anyLetterArray):
+    gameArray = []
+    for i in range(0,99):
+        anyAddress = random.randint(0,25)
+        gameArray.append(anyLetterArray[anyAddress])
+    return gameArray
+
+def theWords( ):
+    wordArray = []
+    wordArray.append("DUTCHMANS")
+    wordArray.append("AGARS")
+    wordArray.append("SOUTHMEADOW")
+    wordArray.append("TUDORS")
+    wordArray.append("BUDGENS")
+    wordArray.append("BEKYNTON")
+    wordArray.append("COLLEGEFIELD")
+    wordArray.append("MASTERS")
+    wordArray.append("COLLEGE")
+    wordArray.append("CHAPEL")
+    return wordArray
+
+def main( ):
+    newLetterArray = makeLetterArray()
+    newGameArray = makeGameArray(newLetterArray)
+    newWordsArray = theWords()
+    placeWords(newWordsArray, newGameArray)
+    print(newGameArray)
+
+main( )
+
+
